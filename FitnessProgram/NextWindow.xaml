@@ -19,12 +19,12 @@
     
 </Grid.RowDefinitions>
         <TextBlock 
-            Text="Activity's" 
             Foreground="LightBlue"
             HorizontalAlignment="Center" 
             VerticalAlignment="Center" 
             FontSize="50" 
-            Grid.Row="0"/>
+            Grid.Row="0"><Run Language="en-gb" Text="Welcome"/></TextBlock>
+        <Button x:Name="GoToMembers" Content="Button" HorizontalAlignment="Left" Margin="400,50,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Button_Click"/>
 
 
     </Grid>

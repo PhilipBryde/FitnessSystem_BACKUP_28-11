@@ -28,7 +28,7 @@ namespace FitnessProgram
             ShowMembers(); //Kalder på ShowMembers funktionen som printer medlemmerne ud
             
         }
-
+        //Hello
         public void ShowMembers()
         {
             List<Member> localList = fitness.GetAllMembers();

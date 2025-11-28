@@ -46,7 +46,9 @@
             Width="45"
             Height="25"
             Margin="0,40,48,0" 
-            Click="Button_Click"/>
+            Click="BackButton_Click"/>
+        <TextBox x:Name="EnterMember" HorizontalAlignment="Left" Margin="632,117,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DeleteMemberButton" Content="Button" HorizontalAlignment="Left" Margin="675,140,0,0" Grid.Row="1" VerticalAlignment="Top" Click="DeleteMemberButton_Click"/>
 
     </Grid>
 </Window>

@@ -6,10 +6,45 @@
         xmlns:local="clr-namespace:FitnessProgram"
         mc:Ignorable="d"
         Title="MemberWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock x:Name="MemberBlock" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
-        <Label Content="Medlemmer" HorizontalAlignment="Center" Margin="0,35,0,0" FontSize="20" FontWeight="Bold" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="686,35,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    <Grid Background="Black">
+
+        <!-- Grid row layout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <!-- row 0 -->
+            <RowDefinition Height="*"/>
+            <!-- row 1-->
+        </Grid.RowDefinitions>
+        
+        <!--Printer listen af medlemmmer ud-->
+        <TextBlock 
+            Grid.Row="1"
+            x:Name="MemberBlock" 
+            Foreground="White"
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top"
+            Margin="0,0,0,0" 
+            TextWrapping="Wrap" 
+            Text="TextBlock"/>
+        
+        <Label 
+            Grid.Row="0"
+            Content="Medlemmer" 
+            Foreground="White"
+            HorizontalAlignment="Center" 
+            Margin="0,35,0,0" 
+            FontSize="20" 
+            FontWeight="Bold" 
+            VerticalAlignment="Top"/>
+        
+        <Button 
+            Grid.Row="0"
+            Content="Tilbage" 
+            Background="LightGreen"
+            HorizontalAlignment="Right" 
+            VerticalAlignment="Center"
+            Margin="0,40,48,0" 
+            Click="Button_Click"/>
 
     </Grid>
 </Window>

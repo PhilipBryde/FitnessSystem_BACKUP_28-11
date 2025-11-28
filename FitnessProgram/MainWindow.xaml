@@ -7,87 +7,115 @@
 
         <!-- Grid layout -->
         <Grid.RowDefinitions>
+            <!-- row 0 -->
             <RowDefinition Height="100"/>
             <!-- row 1 -->
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="280"/>
             <!-- row 2 -->
-            <RowDefinition Height="60"/>
-            <!-- row 3 -->
-            <RowDefinition Height="*"/>
-            <!-- row 4 -->
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
 
 
         <!-- Title -->
-        <TextBlock Text="Fitness-Center"
-                   FontSize="50"
-                   Foreground="LightBlue"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   Grid.Row="0"/>
+        <TextBlock 
+            Grid.Row="0"
+            Text="Fitness-Center"
+            FontSize="50"
+            Foreground="LightBlue"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
 
-        <!-- Subtitle -->
-        <TextBlock Text="Sidney og Philip"
-                   FontSize="25"
-                   Foreground="White"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   Grid.Row="1"/>
+        <!-- SIDNEY OG PHILIP -->
+        <TextBlock 
+            Grid.Row="2"
+            Text="©Sidney og Philip™"
+            FontSize="15"
+            Foreground="DarkGray"
+            Margin="60,0,0,0"/>
 
         <!-- Login info -->
-        <TextBlock Text="Indtast brugernavn og kodeord:"
-                   FontSize="16"
-                   Foreground="White"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Bottom"
-                   Grid.Row="2"/>
+        <TextBlock 
+            Grid.Row="1"
+            Text="Indtast brugernavn og kodeord:"
+            FontSize="16"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Margin="0,-250,0,0"/>
 
 
         <!-- LOGIN FORM -->
-        <StackPanel Grid.Row="3"
-                    VerticalAlignment="Top"
-                    HorizontalAlignment="Center"
-                    Margin="0,20,0,0">
+        <StackPanel 
+            Grid.Row="1"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,40,0,0">
 
             <!-- Username label -->
-            <TextBlock Text="Brugernavn:"
-                       Foreground="White"
-                       Margin="0,0,0,5"
-                       FontSize="14"/>
+            <TextBlock 
+                Text="Brugernavn:"
+                Foreground="White"
+                Margin="0,0,0,5"
+                FontSize="14"/>
 
             <!-- Username input -->
-            <TextBox x:Name="UsernameInput"
-                     Width="220"
-                     Height="35"
-                     FontSize="16"
-                     Margin="0,0,0,15"
-                     Background="white"
-                     Foreground="black"/>
+            <TextBox 
+                x:Name="UsernameInput"
+                Width="220"
+                Height="35"
+                FontSize="16"
+                Margin="0,0,0,15"
+                Background="white"
+                Foreground="black"/>
 
             <!-- Password label -->
-            <TextBlock Text="Kodeord:"
-                       Foreground="White"
-                       Margin="0,0,0,5"
-                       FontSize="14"/>
+            <TextBlock 
+                Text="Kodeord:"
+                Foreground="White"
+                Margin="0,0,0,5"
+                FontSize="14"/>
 
             <!-- Password input -->
-            <PasswordBox x:Name="PasswordInput"
-                         Width="220"
-                         Height="35"
-                         FontSize="16"
-                         Margin="0,0,0,20"
-                         Background="DarkGray"/>
+            <PasswordBox 
+                x:Name="PasswordInput"   
+                Width="220"         
+                Height="35"
+                FontSize="16"
+                Margin="0,0,0,20"
+                Background="DarkGray"/>
 
             <!-- Login button -->
-            <Button x:Name="LoginButton"
-                    Content="Login"
-                    Width="120"
-                    Height="40"
-                    FontSize="16"
-                    Background="LightGreen"
-                    Foreground="Black"
-                    Click="Button_Click"/>
+            <Button 
+                x:Name="LoginButton"
+                Content="Login"
+                Width="120"
+                Height="40"
+                FontSize="16"
+                Background="LightGreen"
+                Foreground="Black"
+                Margin="0,-17,0,0"
+                Click="Button_Click"/>
         </StackPanel>
+
+        <!-- text til oprettelse af ny bruger -->
+        <TextBlock
+            Grid.Row="1"   
+            Text="ikke medlem?"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Margin="0,170,0,0"/>
+
+        <!-- Opret button -->
+        <Button
+            Grid.Row="1"
+            Content="Opret Bruger"
+            Width="120"
+            Height="25"
+            FontSize="11"
+            Background="LightBlue"
+            Foreground="Black"
+            Margin="0,215,0,0"/>
 
     </Grid>
 </Window>

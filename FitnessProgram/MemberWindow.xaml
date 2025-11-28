@@ -43,6 +43,8 @@
             Background="LightGreen"
             HorizontalAlignment="Right" 
             VerticalAlignment="Center"
+            Width="45"
+            Height="25"
             Margin="0,40,48,0" 
             Click="Button_Click"/>
 

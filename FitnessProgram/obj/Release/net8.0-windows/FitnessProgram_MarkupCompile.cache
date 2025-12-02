@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\App.xaml
-6374548852
+6-1381481376
 
-13786084351
+13-1867471259
 198338916705
-MainWindow.xaml;MemberTestWindow.xaml;MemberWindow.xaml;NextWindow.xaml;RegisterWindow.xaml;TestWindow.xaml;
+WPF\MainWindow.xaml;WPF\MemberTestWindow.xaml;WPF\MemberWindow.xaml;WPF\NextWindow.xaml;WPF\RegisterWindow.xaml;WPF\TestWindow.xaml;
 
 True
 

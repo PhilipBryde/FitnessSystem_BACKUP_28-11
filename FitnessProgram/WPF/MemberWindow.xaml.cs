@@ -2,79 +2,71 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using FitnessProgram;
 
 namespace FitnessProgram
 {
-    /// <summary>
-    /// Interaction logic for MemberWindow.xaml
-    /// </summary>
     public partial class MemberWindow : Window
     {
-        Fitness fitness = new Fitness();
+        private readonly Fitness _fitness; // shared Fitness system
 
-        public MemberWindow()
+        public MemberWindow(Fitness fitness)
         {
             InitializeComponent();
+            _fitness = fitness;
 
-            ShowMembers(); //Kalder på ShowMembers funktionen som printer medlemmerne ud
-            
+            ShowMembers(); // Kalder ShowMembers for at vise medlemmerne
         }
-        //Hello
+
+        // --- Show all members in TextBlock ---
         public void ShowMembers()
         {
-            List<Member> localList = fitness.GetAllMembers();
-            StringBuilder allMembers = new StringBuilder(); //Opretter en StringBuilder som samler alt fra listen på en hukommelseseffektiv måde
-            //string allMembers = "";
-            for (int i = 0; i < localList.Count; i++) //For løkke der printer alle medlemmer ud
+            List<Member> localList = _fitness.GetAllMembers();
+            StringBuilder allMembers = new StringBuilder();
+
+            for (int i = 0; i < localList.Count; i++)
             {
                 Member member = localList[i];
-                allMembers.AppendLine($"ID: {member.id} Navn: {member.name} Køn: {member.gender}"); //printer hvert variabel i hver sin linje, da StringBuilder gør det til én stor string
-                
+                allMembers.AppendLine($"ID: {member.id} Navn: {member.name} Køn: {member.gender}");
             }
-            MemberBlock.Text = allMembers.ToString(); //Laver vores StringBuilder om til den endelige string og ligger det ind i vores TextBlock
+
+            MemberBlock.Text = allMembers.ToString();
         }
 
+        // --- Remove member by ID ---
         public void RemoveMember()
         {
-            if (int.TryParse(EnterMember.Text, out int memberID)) // Brugers input bliver konverteret til en int vi kalder for memberID
+            if (int.TryParse(EnterMember.Text, out int memberID))
             {
-                Member member = fitness.GetAllMembers().FirstOrDefault(member => member.id == memberID); //Finder et matchende ID; hvis der ikke bliver fundet noget får vi 'null'
-                if (member != null) //Hvis den får et matchene id, kører denne del
+                Member member = _fitness.GetAllMembers()
+                    .FirstOrDefault(m => m.id == memberID);
+
+                if (member != null)
                 {
-                    fitness.GetAllMembers().Remove(member); //Fjerner medlemmen
-                    ShowMembers(); //Genindlæser listen
-                    MessageBox.Show($"{memberID} slettet!"); //Besked til brugeren
+                    _fitness.GetAllMembers().Remove(member);
+                    ShowMembers(); // Refresh list
+                    MessageBox.Show($"{memberID} slettet!");
                 }
                 else
                 {
-                    MessageBox.Show($"{memberID} ikke fundet, prøv igen"); //Hvis ID'et ikke matcher vises denne besked
+                    MessageBox.Show($"{memberID} ikke fundet, prøv igen");
                 }
             }
             else
             {
-                MessageBox.Show("Indtast venligst et tal"); //Hvis der ikke bliver tastet et tal ind, vises denne besked
+                MessageBox.Show("Indtast venligst et tal");
             }
-            
         }
 
-
+        // --- Back button ---
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            NextWindow next = new NextWindow();
-            next.Show();
+            MainWindow main = new MainWindow(_fitness);
+            main.Show();
             this.Close();
         }
 
+        // --- Delete member button ---
         private void DeleteMemberButton_Click(object sender, RoutedEventArgs e)
         {
             RemoveMember();

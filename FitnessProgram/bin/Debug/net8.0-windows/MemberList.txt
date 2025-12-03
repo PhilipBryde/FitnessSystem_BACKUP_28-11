@@ -1,0 +1,15 @@
+ID: 1 Navn: Mathias Køn: M
+ID: 2 Navn: Anders Køn: M
+ID: 3 Navn: Sofie Køn: F
+ID: 4 Navn: Caroline Køn: F
+ID: 5 Navn: Rasmus Køn: M
+ID: 6 Navn: Johan Køn: M
+ID: 7 Navn: Ida Køn: F
+ID: 8 Navn: Emma Køn: F
+ID: 9 Navn: Victor Køn: M
+ID: 10 Navn: Gertrud Køn: F
+ID: 11 Navn: Richard Køn: M
+ID: 12 Navn: Lasse Køn: M
+ID: 13 Navn: Maya Køn: F
+ID: 14 Navn: Victoria Køn: F
+ID: 15 Navn: Magnus Køn: M

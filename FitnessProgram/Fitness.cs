@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using FitnessProgram;
 public class Fitness
 {
     private readonly List<Member> memberList = new List<Member>(); //liste hvor de forskellige medlemmer bliver tilføjet ind i
+    
 
     public Fitness()
     {
-        // Opretter medlemmer med givende id, navn og køn
+        // Opretter medlemmer med givende id, navn og køn, bliver brugt til login
         memberList.Add(new Member(0, "admin", 'M', "Admin"));
         memberList.Add(new Member(1, "Mathias", 'M'));
         memberList.Add(new Member(2, "Anders", 'M'));
@@ -29,7 +31,10 @@ public class Fitness
         memberList.Add(new Member(15, "Magnus", 'M'));
     }
 
-    public List<Member> GetAllMembers() => memberList;
+    public List<Member> GetAllMembers()
+    {
+        return memberList;
+    } //=> memberList;
 
     // Login - Philip
     public Member Authenticate(string username, string password)
@@ -51,6 +56,20 @@ public class Fitness
         memberList.Add(newMember);
 
         return newMember;
+    }
+
+    public List<string> MemberFromFile()
+    {
+        string filePath = @"MemberList.txt";
+        string[] members = File.ReadAllLines(filePath);
+        return new List<string>(members);
+    }
+
+    public List<string> ActivityFromFile()
+    {
+        string filePath = @"ActivityList.txt";
+        string[] activities = File.ReadAllLines(filePath);
+        return new List<string>(activities);
     }
 }
 

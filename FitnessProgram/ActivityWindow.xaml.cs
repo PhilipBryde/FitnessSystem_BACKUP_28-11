@@ -20,15 +20,20 @@ namespace FitnessProgram
     /// </summary>
     public partial class ActivityWindow : Window
     {
+        Fitness fitness = new Fitness();
         public ActivityWindow()
         {
             InitializeComponent();
             ShowActivity();
+            
         }
         
         public void ShowActivity()
         {
-            string filePath = @"ActivityList.txt";
+            List<string> localMembers = fitness.MemberFromFile();
+            List<string> localActivities = fitness.ActivityFromFile();
+            Yoga.Text = localActivities[0].ToUpper() + Environment.NewLine + localMembers[1] + Environment.NewLine + localMembers[3] + Environment.NewLine + localMembers[8] + Environment.NewLine + localMembers[11] + Environment.NewLine + localMembers[13];
+            /*string filePath = @"ActivityList.txt";
             //string fileText = File.ReadAllText(filePath);
             if (File.Exists(filePath))
             {
@@ -38,20 +43,10 @@ namespace FitnessProgram
                 if (activities.Length > 2) Spinning.Text = activities[2];
                 if (activities.Length > 3) Pilates.Text = activities[3];
                 if (activities.Length > 4) Crossfit.Text = activities[4];
-            }
-            /*for (int i = 0; i < fileText.Length; i++)
-            {
-                Yoga.Text = fileText[0];
-                Boxing.Text = fileText[1];
             }*/
+            
         }
 
- 
-        /*public void RemoveActivity()
-        {
-           if(
-               
-        }*/
 
         private void DeleteActivityButton_Click(object sender, RoutedEventArgs e)
         {

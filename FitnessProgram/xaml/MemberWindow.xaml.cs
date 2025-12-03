@@ -21,7 +21,7 @@ namespace FitnessProgram
         // --- Show all members in TextBlock ---
         public void ShowMembers()
         {
-            List<Member> localList = _fitness.GetAllMembers();
+            /*List<Member> localList = _fitness.GetAllMembers();
             StringBuilder allMembers = new StringBuilder();
 
             for (int i = 0; i < localList.Count; i++)
@@ -30,7 +30,9 @@ namespace FitnessProgram
                 allMembers.AppendLine($"ID: {member.id} Navn: {member.name} Køn: {member.gender}");
             }
 
-            MemberBlock.Text = allMembers.ToString();
+            MemberBlock.Text = allMembers.ToString();*/
+            List<string> localList = _fitness.MemberFromFile();
+            MemberBlock.Text = string.Join(Environment.NewLine, localList);
         }
 
         // --- Remove member by ID ---
@@ -38,8 +40,7 @@ namespace FitnessProgram
         {
             if (int.TryParse(EnterMember.Text, out int memberID))
             {
-                Member member = _fitness.GetAllMembers()
-                    .FirstOrDefault(m => m.id == memberID);
+                Member member = _fitness.GetAllMembers().FirstOrDefault(m => m.id == memberID);
 
                 if (member != null)
                 {

@@ -37,22 +37,12 @@ namespace FitnessProgram
             this.Close();
         }
 
-        // --- Fun button --- Sidney
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < 1000; i++)
-            {
-                MainWindow main = new MainWindow(_fitness);
-                main.Show();
-            }
-        }
-
-        // --- Button: Open ActivityOptionsWindow --- Philip
+        // --- Button: Open ActivityWindow --- Philip
         private void GoToActivity_Click(object sender, RoutedEventArgs e)
         {
             // Example: pass fitness and an example activity name
-            ActivityOptionsWindow activityOptions = new ActivityOptionsWindow(_fitness, "ExampleActivity");
-            activityOptions.Show();
+            ActivityWindow activity = new ActivityWindow();
+            activity.Show();
             this.Close();
         }
 

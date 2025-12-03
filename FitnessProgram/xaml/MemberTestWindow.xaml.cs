@@ -35,7 +35,7 @@ namespace FitnessProgram
         }
 
         // Called when user clicks an activity button
-        private void Button_Click(object sender, RoutedEventArgs e)
+        /*private void Button_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
             var activity = button?.DataContext as string;
@@ -46,7 +46,7 @@ namespace FitnessProgram
                 ActivityOptionsWindow activityOptions = new ActivityOptionsWindow(_fitness, activity);
                 activityOptions.Show();
             }
-        }
+        }*/
 
         // Back button: return to NextWindow
         private void BackButton_Click(object sender, RoutedEventArgs e)

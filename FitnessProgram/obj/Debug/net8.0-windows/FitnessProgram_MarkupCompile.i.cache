@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\
+C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\obj\Debug\net8.0-windows\
 FitnessProgram
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\bryde\Documents\GitHub\FitnessSystem\FitnessProgram\App.xaml
-716339390
+C:\Users\sidne\source\repos\FitnessSystem\FitnessProgram\App.xaml
+81729173476
 
-16136742966
+17861198311
 198338916705
-xaml\ActivityOptionsWindow.xaml;xaml\MainWindow.xaml;xaml\MemberTestWindow.xaml;xaml\MemberWindow.xaml;xaml\NextWindow.xaml;xaml\RegisterWindow.xaml;xaml\TestWindow.xaml;
+ActivityWindow.xaml;xaml\ActivityOptionsWindow.xaml;xaml\MainWindow.xaml;xaml\MemberTestWindow.xaml;xaml\MemberWindow.xaml;xaml\NextWindow.xaml;xaml\RegisterWindow.xaml;xaml\TestWindow.xaml;
 
-True
+False
 

@@ -47,11 +47,11 @@ namespace FitnessProgram
         }
 
  
-        public void RemoveActivity()
+        /*public void RemoveActivity()
         {
            if(
                
-        }
+        }*/
 
         private void DeleteActivityButton_Click(object sender, RoutedEventArgs e)
         {

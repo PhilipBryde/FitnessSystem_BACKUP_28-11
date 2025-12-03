@@ -61,7 +61,7 @@ namespace FitnessProgram {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FitnessProgram;V1.0.0.0;component/xaml/activityoptionswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FitnessProgram;component/xaml/activityoptionswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\xaml\ActivityOptionsWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

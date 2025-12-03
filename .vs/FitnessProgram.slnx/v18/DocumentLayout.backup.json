@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\fitness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\fitness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\classes\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\classes\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\xaml\\nextwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\xaml\\nextwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\xaml\\nextwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\xaml\\nextwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\xaml\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\xaml\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\xaml\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\xaml\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|c:\\users\\bryde\\documents\\github\\fitnesssystem\\fitnessprogram\\xaml\\memberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{204B6883-A3E8-47E8-8DE8-F23E8F01227E}|FitnessProgram\\FitnessProgram.csproj|solutionrelative:fitnessprogram\\xaml\\memberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,87 +14,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 222,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Fitness.cs",
-              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\Fitness.cs",
-              "RelativeDocumentMoniker": "FitnessProgram\\Fitness.cs",
-              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\Fitness.cs",
-              "RelativeToolTip": "FitnessProgram\\Fitness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T08:51:39.091Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Member.cs",
-              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\Classes\\Member.cs",
-              "RelativeDocumentMoniker": "FitnessProgram\\Classes\\Member.cs",
-              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\Classes\\Member.cs",
-              "RelativeToolTip": "FitnessProgram\\Classes\\Member.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T09:35:23.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NextWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\NextWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\NextWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\NextWindow.xaml.cs",
-              "RelativeToolTip": "FitnessProgram\\xaml\\NextWindow.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAYwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T09:35:17.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NextWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\NextWindow.xaml",
-              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\NextWindow.xaml",
-              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\NextWindow.xaml",
-              "RelativeToolTip": "FitnessProgram\\xaml\\NextWindow.xaml",
+              "DocumentIndex": 0,
+              "Title": "MemberWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\MemberWindow.xaml",
+              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\MemberWindow.xaml",
+              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\MemberWindow.xaml",
+              "RelativeToolTip": "FitnessProgram\\xaml\\MemberWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-03T09:35:14.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\MainWindow.xaml",
-              "RelativeToolTip": "FitnessProgram\\xaml\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-03T09:35:13.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FitnessProgram\\xaml\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\bryde\\Documents\\GitHub\\FitnessSystem\\FitnessProgram\\xaml\\MainWindow.xaml.cs",
-              "RelativeToolTip": "FitnessProgram\\xaml\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T09:01:54.962Z",
+              "WhenOpened": "2025-12-03T10:12:14.794Z",
               "EditorCaption": ""
             }
           ]

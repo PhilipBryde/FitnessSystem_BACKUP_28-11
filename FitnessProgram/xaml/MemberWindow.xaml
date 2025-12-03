@@ -12,8 +12,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <!-- row 0 -->
-            <RowDefinition Height="*"/>
-            <!-- row 1-->
+            <RowDefinition Height="600"/>
+            <!-- row 1 -->
+         
         </Grid.RowDefinitions>
         
         <!--Printer listen af medlemmmer ud-->
@@ -41,17 +42,54 @@
             Grid.Row="0"
             Content="Tilbage"
             Foreground="Black"
-            Background="DeepSkyBlue"
-            HorizontalAlignment="Right" 
+            Background="Yellow"
+            HorizontalAlignment="center" 
             VerticalAlignment="Center"
             Width="45"
             Height="25"
-            Margin="0,40,48,0" 
+            Margin="700,40,48,0" 
             Click="BackButton_Click"/>
-        <TextBox x:Name="EnterMember" HorizontalAlignment="Left" Margin="632,117,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="DeleteMemberButton" Foreground="White" Background="Red" Content="Slet" HorizontalAlignment="Left" Margin="675,140,0,0" Grid.Row="1" VerticalAlignment="Top" Click="DeleteMemberButton_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="730,82,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="589,88,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tast medlemmets ID for at slette det" VerticalAlignment="Top"/>
+        
+        <!--Delete members box -->
+        <TextBox 
+            x:Name="EnterMember" 
+            Grid.Row="0"
+            HorizontalAlignment="Center" 
+            Margin="450,45,0,0" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Center" 
+            Width="120"/>
+        
+        <!--Delete members -->
+        <Button 
+            x:Name="DeleteMemberButton" 
+            Foreground="White" 
+            Background="Red" 
+            Width="50"
+            Content="Slet" 
+            HorizontalAlignment="Center" 
+            Margin="450,0,0,0" 
+            Grid.Row="0" 
+            VerticalAlignment="Center" 
+            Click="DeleteMemberButton_Click"/>
+        
+        <!-- Sidney Fun Button -->
+        <Button 
+            Grid.Row="0"
+            Content="Button" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            Margin="50,0,0,0" 
+            />
+        
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            Margin="589,88,0,0" 
+            Grid.Row="1" 
+            TextWrapping="Wrap" 
+            Text="Tast medlemmets ID for at slette det" 
+            VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -20,20 +20,34 @@ namespace FitnessProgram
     /// </summary>
     public partial class ActivityWindow : Window
     {
-        Fitness fitness = new Fitness();
-        public ActivityWindow()
+        private Fitness fitness;
+        private NextWindow previousWindow;
+
+        public ActivityWindow(Fitness fitness, NextWindow nextWindow)
         {
             InitializeComponent();
+            this.fitness = fitness;
+            this.previousWindow = nextWindow;
             ShowActivity();
-            
         }
-        
+
         public void ShowActivity()
         {
             List<string> localMembers = fitness.MemberFromFile();
             List<string> localActivities = fitness.ActivityFromFile();
-            Yoga.Text = localActivities[0].ToUpper() + Environment.NewLine + localMembers[1] + Environment.NewLine + localMembers[3] + Environment.NewLine + localMembers[8] + Environment.NewLine + localMembers[11] + Environment.NewLine + localMembers[13];
-            Boxing.Text = localActivities[1].ToUpper() + Environment.NewLine + localMembers[1] + Environment.NewLine + localMembers[4] + Environment.NewLine + localMembers[7];
+
+            Yoga.Text = localActivities[0].ToUpper() + Environment.NewLine +
+                        localMembers[1] + Environment.NewLine +
+                        localMembers[3] + Environment.NewLine +
+                        localMembers[8] + Environment.NewLine +
+                        localMembers[11] + Environment.NewLine +
+                        localMembers[13];
+
+            Boxing.Text = localActivities[1].ToUpper() + Environment.NewLine +
+                          localMembers[1] + Environment.NewLine +
+                          localMembers[4] + Environment.NewLine +
+                          localMembers[7];
+
             /*string filePath = @"ActivityList.txt";
             //string fileText = File.ReadAllText(filePath);
             if (File.Exists(filePath))
@@ -45,13 +59,17 @@ namespace FitnessProgram
                 if (activities.Length > 3) Pilates.Text = activities[3];
                 if (activities.Length > 4) Crossfit.Text = activities[4];
             }*/
-            
         }
-
 
         private void DeleteActivityButton_Click(object sender, RoutedEventArgs e)
         {
+        }
 
+        // --- Button: Go back to Next Window --- Philip
+        private void GoToNextWindow_Click(object sender, RoutedEventArgs e)
+        {
+            previousWindow.Show(); // Show the existing window
+            this.Close();
         }
     }
 }

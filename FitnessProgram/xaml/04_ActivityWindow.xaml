@@ -5,26 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessProgram"
         mc:Ignorable="d"
+        d:DesignHeight="1080" 
+        d:DesignWidth="1920"
         WindowState="Maximized"
         WindowStyle="SingleBorderWindow"
         Title="ActivityWindow" Height="450" Width="800">
     <Grid Background="Black">
-        <!-- Sidney xaml code -->
-        <Label Content="Aktiviteter" Grid.Row="0" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Yoga" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="40,131,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Boxing" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="198,131,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Spinning" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="322,134,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Pilates" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="430,134,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="Crossfit" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="531,131,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBox   x:Name="EnterActivity" Grid.Row="1"  HorizontalAlignment="Left" Margin="670,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button    x:Name="DeleteMemberButton" Grid.Row="1" Foreground="White" Background="Red" Content="Slet" HorizontalAlignment="Left" Margin="683,297,0,0" VerticalAlignment="Top" Click="DeleteActivityButton_Click"/>
-        <Button x:Name="AddMemberButton" Grid.Row="1" Content="Tilføj" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="739,297,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="CreateActivity" Grid.Row="1" Background="GreenYellow" Content="Opret" HorizontalAlignment="Left" Margin="714,347,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Grid.Row="1"  Margin="670,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <!-- Sidney xaml code -->
-
-        <!-- Philip xaml code -->
-        
         <!-- Grid layout -->
         <Grid.RowDefinitions>
             <!-- row 0 -->
@@ -32,7 +18,35 @@
             <!-- row 1 -->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+        <!-- Grid layout -->
+
+        <!-- Sidney xaml code -->
+        <Label Grid.Row="0"  Content="Aktiviteter" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Yoga" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="50,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Boxing" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="250,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Spinning" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="450,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Pilates" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="650,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Crossfit" Grid.Row="1" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="850,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox   x:Name="EnterActivity" Grid.Row="1"  HorizontalAlignment="Left" Margin="1297,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="4.667,-0.805"/>
+        <Button    x:Name="DeleteMemberButton" Grid.Row="1" Height="35" Width="50" Foreground="White" Background="Red" Content="Slet" HorizontalAlignment="Left" Margin="1274,216,0,0" VerticalAlignment="Top" Click="DeleteActivityButton_Click"/>
+        <Button x:Name="AddMemberButton" Grid.Row="1" Height="35" Width="50" Content="Tilføj" Background="DeepSkyBlue" HorizontalAlignment="Left" Margin="1393,216,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CreateActivity" Grid.Row="1" Height="34" Width="100" Background="GreenYellow" Content="Opret Aktivitet" HorizontalAlignment="Left" Margin="1307,269,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Grid.Row="1"  Margin="1297,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <!-- Sidney xaml code -->
+
+        <!-- Philip xaml code -->
+
+        <Button 
+        Content="TILBAGE"
+        x:Name="TilbageButton"     
+        Background="Yellow"    
+        Grid.Row="1" 
+        Width="100"
+        Height="40"
+        HorizontalAlignment="Left" 
+        VerticalAlignment="Top" 
+        Margin="1728,132,0,0"
+        Click="GoToNextWindow_Click"/>
 
 
 

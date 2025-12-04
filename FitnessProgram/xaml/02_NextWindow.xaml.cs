@@ -4,18 +4,18 @@ namespace FitnessProgram
 {
     public partial class NextWindow : Window
     {
-        private readonly Fitness _fitness;    // Reference to shared Fitness system
-        private readonly Member? _member;     // Current logged-in member (nullable if needed)
+        private readonly Fitness fitness;    // Reference to shared Fitness system
+        private readonly Member? member;     // Current logged-in member (nullable if needed)
 
         // Constructor for logged-in member
         public NextWindow(Member member, Fitness fitness)
         {
             InitializeComponent();
-            _fitness = fitness;
-            _member = member;
-
+            this.fitness = fitness;
+            this.member = member;
             WelcomeText.Text = $"Velkommen {member.name}!"; // Show welcome message
-                                                            // SHOW ADMIN BUTTON ONLY IF ROLE IS ADMIN
+
+            // SHOW ADMIN BUTTON ONLY IF ROLE IS ADMIN
             if (member.role.ToLower() == "admin")
             {
                 MemberButton.Visibility = Visibility.Visible;
@@ -26,13 +26,13 @@ namespace FitnessProgram
         public NextWindow(Fitness fitness)
         {
             InitializeComponent();
-            _fitness = fitness;
+            this.fitness = fitness;
         }
 
         // --- Button: Open Member Window --- Philip
         private void GoToMembers_Click(object sender, RoutedEventArgs e)
         {
-            MemberWindow memberWindow = new MemberWindow(_fitness);
+            MemberWindow memberWindow = new MemberWindow(fitness);
             memberWindow.Show();
             this.Close();
         }
@@ -40,16 +40,15 @@ namespace FitnessProgram
         // --- Button: Open ActivityWindow --- Philip
         private void GoToActivity_Click(object sender, RoutedEventArgs e)
         {
-            // Example: pass fitness and an example activity name
-            ActivityWindow activity = new ActivityWindow();
+            ActivityWindow activity = new ActivityWindow(fitness, this);
             activity.Show();
-            this.Close();
+            this.Hide(); // Use Hide() instead of Close()
         }
 
         // --- Button: Go back to Main Menu --- Philip
         private void GoToMainWindow_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(_fitness);
+            MainWindow main = new MainWindow(fitness);
             main.Show();
             this.Close();
         }

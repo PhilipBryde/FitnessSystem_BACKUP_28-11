@@ -1,6 +1,8 @@
 ﻿<Window x:Class="FitnessProgram.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowState="Maximized"
+        WindowStyle="SingleBorderWindow"
         Title="Login" Height="450" Width="800">
 
     <Grid Background="Black">

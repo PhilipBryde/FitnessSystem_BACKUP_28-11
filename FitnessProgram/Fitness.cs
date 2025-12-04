@@ -5,10 +5,10 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using FitnessProgram;
+
 public class Fitness
 {
     private readonly List<Member> memberList = new List<Member>(); //liste hvor de forskellige medlemmer bliver tilføjet ind i
-    
 
     public Fitness()
     {
@@ -51,10 +51,8 @@ public class Fitness
     public Member Register(string name, char gender, int age)
     {
         int newId = (memberList.Count > 0) ? memberList.Max(m => m.id) + 1 : 1;
-
         Member newMember = new Member(newId, name, gender);
         memberList.Add(newMember);
-
         return newMember;
     }
 
@@ -72,4 +70,3 @@ public class Fitness
         return new List<string>(activities);
     }
 }
-

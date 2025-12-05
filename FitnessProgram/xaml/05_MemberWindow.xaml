@@ -52,7 +52,7 @@
             Width="45"
             Height="25"
             Margin="700,40,48,0" 
-            Click="BackButton_Click"/>
+            Click="GoToNextWindow_Click"/>
         
         <!--Delete members box -->
         <TextBox 

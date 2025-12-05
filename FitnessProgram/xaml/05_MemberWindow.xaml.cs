@@ -9,11 +9,15 @@ namespace FitnessProgram
     public partial class MemberWindow : Window
     {
         private readonly Fitness _fitness; // shared Fitness system
+        private readonly Fitness fitness; // Shared fitness system
+        private readonly Member member;   // Logged in user
 
-        public MemberWindow(Fitness fitness)
+        public MemberWindow(Fitness fitness, Member member)
         {
             InitializeComponent();
             _fitness = fitness;
+            this.fitness = fitness;
+            this.member = member;
 
             ShowMembers(); // Kalder ShowMembers for at vise medlemmerne
         }
@@ -61,10 +65,11 @@ namespace FitnessProgram
 
 
         // --- Back button ---
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        // BACK BUTTON HANDLER
+        private void GoToNextWindow_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow(_fitness);
-            main.Show();
+            NextWindow next = new NextWindow(member, fitness);
+            next.Show();
             this.Close();
         }
 

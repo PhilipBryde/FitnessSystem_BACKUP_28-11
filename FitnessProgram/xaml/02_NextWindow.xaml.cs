@@ -32,7 +32,7 @@ namespace FitnessProgram
         // --- Button: Open Member Window --- Philip
         private void GoToMembers_Click(object sender, RoutedEventArgs e)
         {
-            MemberWindow memberWindow = new MemberWindow(fitness);
+            MemberWindow memberWindow = new MemberWindow(fitness, member);
             memberWindow.Show();
             this.Close();
         }

@@ -12,4 +12,8 @@
     <Page Include="App.xaml" />
   </ItemGroup>
 
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="taskkill /f /im FitnessProgram.exe /im apphost.exe &gt;nul 2&gt;&amp;1 || ver &gt;nul" />
+  </Target>
+
 </Project>

@@ -35,7 +35,6 @@ namespace FitnessProgram
             if (member.role.ToLower() != "admin")
             {
                 DeleteMemberButton.Visibility = Visibility.Collapsed;
-                AddMemberButton.Visibility = Visibility.Collapsed;
                 CreateActivity.Visibility = Visibility.Collapsed;
                 EnterActivity.Visibility = Visibility.Collapsed;
                 EnterMember.Visibility = Visibility.Collapsed;
@@ -149,7 +148,6 @@ namespace FitnessProgram
             if (member.role.ToLower() == "admin")
             {
                 DeleteMemberButton.Visibility = Visibility.Visible;
-                AddMemberButton.Visibility = Visibility.Visible;
                 CreateActivity.Visibility = Visibility.Visible;
                 EnterActivity.Visibility = Visibility.Visible;
                 EnterMember.Visibility = Visibility.Visible;
@@ -164,7 +162,6 @@ namespace FitnessProgram
             {
                 // Hide admin-only controls FOR USER
                 DeleteMemberButton.Visibility = Visibility.Collapsed;
-                AddMemberButton.Visibility = Visibility.Collapsed;
                 CreateActivity.Visibility = Visibility.Collapsed;
                 EnterActivity.Visibility = Visibility.Collapsed;
                 EnterMember.Visibility = Visibility.Collapsed;

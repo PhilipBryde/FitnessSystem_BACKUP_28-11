@@ -13,12 +13,12 @@ namespace FitnessProgram
         private readonly Fitness fitness; // Shared fitness system
         private readonly Member member;   // Logged in user
         public List<string> _localList;
-        public MemberWindow(Fitness fitness)
+        public MemberWindow(Fitness fitness, Member member)
         {
             InitializeComponent();
             //_fitness = fitness;
             this.fitness = fitness;
-            //this.member = member;
+            this.member = member;
             this._localList = fitness.MemberFromFile().ToList();
             ShowMembers(); // Kalder ShowMembers for at vise medlemmerne
         }
@@ -77,7 +77,7 @@ namespace FitnessProgram
         // BACK BUTTON HANDLER
         private void GoToNextWindow_Click(object sender, RoutedEventArgs e)
         {
-            NextWindow next = new NextWindow(fitness);
+            NextWindow next = new NextWindow(member, fitness);
             next.Show();
             this.Close();
         }

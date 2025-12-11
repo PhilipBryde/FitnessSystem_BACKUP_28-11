@@ -25,19 +25,8 @@ namespace FitnessProgram
 
         private void ShowMembers() //Metode der viser alle medlemmerne fra textfilen i en string -- Sidney
         {
-            //---LEGACY UDGAVE UDFRA LISTEN I KODEN---
-            /*List<Member> localList = _fitness.GetAllMembers();
-            StringBuilder allMembers = new StringBuilder();
-
-            for (int i = 0; i < localList.Count; i++)
-            {
-                Member member = localList[i];
-                allMembers.AppendLine($"ID: {member.id} Navn: {member.name} Køn: {member.gender}");
-            }
-
-            MemberBlock.Text = allMembers.ToString();*/
    
-            //--- NY UDGAVE UDFRA TEXTFILEN---
+            // UDGAVE UDFRA TEXTFILEN
             StringBuilder allMembers = new StringBuilder(); //Opretter ny StringBuilder
 
             for (int i = 0; i < _localList.Count; i++) //En forløkke der kører så længe i er mindre end antallet af medlemmer i listen, inkrementerer i hvert loop

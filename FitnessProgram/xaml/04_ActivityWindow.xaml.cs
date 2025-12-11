@@ -320,7 +320,6 @@ namespace FitnessProgram
                 // Almindeligt medlem ser KUN navnet (som ønsket)
                 displayMember = member.name;
             }
-            // **********************************************
 
             // Split lines så teksten er mere læsbar
             List<string> lines = target.Text

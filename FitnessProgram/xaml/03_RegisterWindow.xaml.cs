@@ -54,13 +54,5 @@ namespace FitnessProgram
             this.Close();
         }
 
-        /*private void SaveMemberToFile(Member member) //Metode der gemmer ny medlem i text filen, tager den nye medlem som input -- Sidney
-        {
-            string filePath = @"MemberList.txt"; //Gemmer stien til textfilen
-            string m = $"ID: {member.id}, Navn: {member.name}, Køn: {member.gender}"; //Opretter ny string med medlemmets infomation
-            File.AppendAllText(filePath, Environment.NewLine + m); //Bliver gemt i filen
-
-        }*/
-
     }
 }

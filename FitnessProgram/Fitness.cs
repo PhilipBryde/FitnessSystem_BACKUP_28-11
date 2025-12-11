@@ -65,7 +65,8 @@ public class Fitness
     // REGISTER (opret nyt medlem) - Philip
     public Member Register(string name, char gender, int age)
     {
-        int newId = (memberList.Count > 0) ? memberList.Max(m => m.id) + 1 : 1;
+        // Generer et nyt ID. Tager det højeste eksisterende ID og lægger 1 til.
+        int newId = (memberList.Count > 0) ? memberList.Max(m => m.id) + 1 : 1; 
         Member newMember = new Member(newId, name, gender);
         memberList.Add(newMember);
         return newMember;

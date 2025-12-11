@@ -22,12 +22,6 @@ namespace FitnessProgram
             }
         }
 
-        // Optional constructor når man navigere uden member 
-        /*public NextWindow(Fitness fitness)
-        {
-            InitializeComponent();
-            this.fitness = fitness;
-        }*/
 
         // --- Button: Open Member Window --- Philip
         private void GoToMembers_Click(object sender, RoutedEventArgs e)
